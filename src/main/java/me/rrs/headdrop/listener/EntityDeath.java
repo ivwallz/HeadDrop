@@ -343,13 +343,13 @@ public class EntityDeath implements Listener {
                         return switch (tropicalFish.getBodyColor()) {
                             case YELLOW -> EntityHead.TROPICAL_FISH_YELLOW.getSkull();
                             case PINK, MAGENTA -> EntityHead.TROPICAL_FISH_PINK.getSkull();
-                            case GRAY -> EntityHead.TROPICAL_FISH_GRAY.getSkull();
                             case CYAN, LIGHT_BLUE-> EntityHead.TROPICAL_FISH_CYAN.getSkull();
                             case BLUE -> EntityHead.TROPICAL_FISH_BLUE.getSkull();
-                            case GREEN -> EntityHead.TROPICAL_FISH_GREEN.getSkull();
+                            case GREEN, LIME -> EntityHead.TROPICAL_FISH_GREEN.getSkull();
                             case RED -> EntityHead.TROPICAL_FISH_RED.getSkull();
-                            case BLACK, LIGHT_GRAY -> EntityHead.TROPICAL_FISH_BLACK.getSkull();
+                            case GRAY, LIGHT_GRAY -> EntityHead.TROPICAL_FISH_GRAY.getSkull();
                             case ORANGE -> EntityHead.TROPICAL_FISH_ORANGE.getSkull();
+                            case BLACK, WHITE -> EntityHead.TROPICAL_FISH_BLACK.getSkull();
                             default -> throw new IllegalStateException("Unexpected value: " + tropicalFish.getBodyColor());
                         };
                     }));
